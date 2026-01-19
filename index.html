@@ -24,12 +24,15 @@
 </head>
 
 <body class="poppins-thin">
-    <header class="md:container mx-auto">
+    <header
+        class="md:container mx-auto mt-3 sticky top-0 z-10 p-2 md:p-4 rounded-lg shadow-lg bg-[#aa4abd44] blur-backdrop-filter backdrop-blur-md bg-opacity-10">
         <nav>
             <div class="navbar">
                 <div class="navbar-start">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <div tabindex="0" role="button" class="btn text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 
+    transition delay-150 duration-300 ease-in-out hover:-translate-y-2 hover:scale-110 
+    lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -37,7 +40,7 @@
                             </svg>
                         </div>
                         <ul tabindex="-1"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow ">
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow font-bold text-[#fc4d02]">
                             <li><a>Home</a></li>
                             <li><a>Shope</a></li>
                             <li><a>News</a></li>
@@ -45,13 +48,13 @@
                         </ul>
                     </div>
                     <div>
-                        <h1 class="text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500
-                        to-pink-500 bg-clip-text text-transparent">Biker Zone</h1>
+                        <h1 class=" text-3xl lg:text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500
+                        to-pink-500 bg-clip-text text-transparent pl-2 lg:pl-0">Biker Zone</h1>
                     </div>
                 </div>
                 <div class="navbar-end">
                     <div class=" hidden lg:flex ">
-                        <ul class="menu menu-horizontal px-1">
+                        <ul class="menu menu-horizontal text-xl px-1 font-bold text-[#fc4d02]">
                             <li><a>Home</a></li>
                             <li><a>Shope</a></li>
                             <li><a>News</a></li>
@@ -59,134 +62,265 @@
                         </ul>
                     </div>
                     <a
-                        class="btn text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-5 px-8 rounded-xl">Login</a>
+                        class="btn text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-2 hover:scale-130 p-5 px-8 rounded-xl">Login</a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!--main section 1-->
+    <main class="md:container mx-auto bg-slate-200 mt-10">
+        <!--main section 1-->
 
-    <main class="md:container mx-auto">
-        <div class="carousel w-full mt-10">
+        <section>
+            <div class="carousel w-full">
 
-            <!-- slide 1 -->
-            <div id="slide1" class="carousel-item relative w-full lg:h-[550px] rounded-lg bg-[#fbe7e1]">
-                <!-- text content -->
-                <div class="flex flex-col lg:flex-row p-10 lg:p-20 ">
-                    <div class="space-y-7 flex-1 ">
-                        <h1 class="text-4xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
-                        <p class="text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                            Velit
-                            officia consequat
-                            duis enim velit mollit.</p>
-                        <button
-                            class="btn text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-5 px-8 rounded-xl">Purchase</button>
+                <!-- slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full lg:h-[550px] rounded-lg bg-[#fbe7e1]">
+                    <!-- text content -->
+                    <div class="flex flex-col lg:flex-row p-10 lg:p-20 ">
+                        <div class="space-y-7 flex-1 ">
+                            <h1 class="inline-block text-5xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500
+                        to-pink-500 bg-clip-text text-transparent">Ride-on R15 V4<br>with Smile</h1>
+                            <p class="text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                Velit
+                                officia consequat
+                                duis enim velit mollit.</p>
+                            <button
+                                class="btn text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-2 hover:scale-130 p-5 px-8 rounded-xl">Purchase</button>
+                        </div>
+                        <!-- image -->
+                        <div class="flex-1 justify-center items-center flex">
+                            <img src="./images/slider/bike1.png" alt="">
+                        </div>
                     </div>
-                    <!-- image -->
-                    <div class="flex-1 justify-center items-center flex">
-                        <img src="./images/slider/bike1.png" alt="">
+
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
                 </div>
+                <!-- slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full lg:h-[550px] rounded-lg bg-[#fbe7e1]">
+                    <!-- text content -->
+                    <div class="flex flex-col lg:flex-row p-10 lg:p-20 ">
+                        <div class="space-y-7 flex-1 ">
+                            <h1 class="text-4xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
+                            <p class="text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                Velit
+                                officia consequat
+                                duis enim velit mollit.</p>
+                            <button
+                                class="btn text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-2 hover:scale-130 p-5 px-8 rounded-xl">Purchase</button>
+                        </div>
+                        <!-- image -->
+                        <div class="flex-1 justify-center items-center flex">
+                            <img src="./images/slider/bike2.png" alt="">
+                        </div>
+                    </div>
 
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide4" class="btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide 3 -->
+                <div id="slide3" class="carousel-item relative w-full lg:h-[550px] rounded-lg bg-[#fbe7e1]">
+                    <!-- text content -->
+                    <div class="flex flex-col lg:flex-row p-10 lg:p-20 ">
+                        <div class="space-y-7 flex-1 ">
+                            <h1 class="text-4xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
+                            <p class="text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                Velit
+                                officia consequat
+                                duis enim velit mollit.</p>
+                            <button
+                                class="btn text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-2 hover:scale-130 p-5 px-8 rounded-xl">Purchase</button>
+                        </div>
+                        <!-- image -->
+                        <div class="flex-1 justify-center items-center flex">
+                            <img src="./images/slider/bike3.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide 4 -->
+                <div id="slide4" class="carousel-item relative w-full lg:h-[550px] rounded-lg bg-[#fbe7e1]">
+                    <!-- text content -->
+                    <div class="flex flex-col lg:flex-row p-10 lg:p-20 ">
+                        <div class="space-y-7 flex-1 ">
+                            <h1 class="text-4xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
+                            <p class="text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                Velit
+                                officia consequat
+                                duis enim velit mollit.</p>
+                            <button
+                                class="btn text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-2 hover:scale-130 p-5 px-8 rounded-xl">Purchase</button>
+                        </div>
+                        <!-- image -->
+                        <div class="flex-1 justify-center items-center flex">
+                            <img src="./images/slider/bike4.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
                 </div>
             </div>
-            <!-- slide 2 -->
-            <div id="slide2" class="carousel-item relative w-full lg:h-[550px] rounded-lg bg-[#fbe7e1]">
-                <!-- text content -->
-                <div class="flex flex-col lg:flex-row p-10 lg:p-20 ">
-                    <div class="space-y-7 flex-1 ">
-                        <h1 class="text-4xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
-                        <p class="text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                            Velit
-                            officia consequat
-                            duis enim velit mollit.</p>
-                        <button
-                            class="btn text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-5 px-8 rounded-xl">Purchase</button>
+        </section>
+        <section class="mt-20">
+            <!-- main section 2 -->
+
+            <div class="flex flex-col items-center space-y-5">
+                <h1 class="text-xl lg:text-4xl font-semibold">Fetured Bikes In This Year</h1>
+                <p class="text-xl text-[#E76F51]">Best bike collection</p>
+            </div>
+
+
+            <!-- image -->
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-3 mt-10 mx-5">
+                <img class="w-full rounded-2xl" src="./images/others/b1.jpg" alt="">
+                <img class="w-full rounded-2xl" src="./images/others/b2.jpg" alt="">
+                <img class="w-full rounded-2xl" src="./images/others/b3.jpg" alt="">
+            </div>
+
+        </section>
+
+        <!-- section 3 -->
+
+        <section class="pt-10 mt-20">
+            <div>
+                <h1 class="font-semibold text-5xl text-center">Latest News</h1>
+            </div>
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card shadow-xl flex flex-col mx-5 pb-5">
+                    <img src="./images/others/latest1.png" alt="">
+                    <h2 class="font-semibold text-2xl mt-5">Ducati XDIAVEL S-73</h2>
+                    <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet
+                        faucibus sed id
+                        nisi
+                        elit. Lacus,
+                        fermentum
+                        amet
+                        faucibus sed id
+                        nisi
+                        lectus at.</p>
+                    <button
+                        class="btn  btn-outline mt-auto self-start text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-2 hover:scale-110 p-5 px-8 rounded-xl">Read
+                        More</button>
+                </div>
+                <div class="card shadow-xl mx-5 flex flex-col pb-5">
+                    <img src="./images/others/latest2.png" alt="">
+                    <h2 class="font-semibold text-2xl mt-5">Motorcycles & Scooters</h2>
+                    <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet
+                        faucibus sed id
+                        nisi
+                        lectus at.</p>
+                    <button
+                        class="btn  btn-outline mt-auto self-start text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-2 hover:scale-110 p-5 px-8 rounded-xl">Read
+                        More</button>
+                </div>
+                <div class="card shadow-xl mx-5 flex flex-col pb-5">
+                    <img src=" ./images/others/latest3.png" alt="">
+                    <h2 class="font-semibold text-2xl mt-5">2021 Honda CBR500R</h2>
+                    <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet
+                        faucibus sed id
+                        nisi
+                        lectus at.</p>
+                    <button
+                        class="btn  btn-outline mt-auto self-start text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-2 hover:scale-110 p-5 px-8 rounded-xl">Read
+                        More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 4 -->
+
+        <section class="mt-30 ">
+            <div class="font-semibold text-5xl text-center">
+                <h2>Happy <span class="text-[#E76F51]">Clients says</span></h2>
+            </div>
+            <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div class="border border-[#424141] mx-5 bg-[#dad9d9] shadow-xl rounded-2xl">
+                    <img class="p-3 rounded-full mx-auto w-1/2" src="./images/others/a.jpg" alt="">
+                    <p class="text-center mt-10 px-7">Slate helps you see how many more days you need to work to reach
+                        your
+                        financial goal for the
+                        month
+                        and year.</p>
+
+                    <div class="flex flex-row  space-x-2 mt-5 justify-center">
+                        <img class="w-10" src="./images/icons/star-solid.svg" alt="">
+                        <img class="max-w-10" src="./images/icons/star-solid.svg" alt="">
+                        <img class="max-w-10" src="./images/icons/star-solid.svg" alt="">
+                        <img class="max-w-10" src="./images/icons/star-solid.svg" alt="">
+                        <img class="max-w-10" src="./images/icons/star-regular.svg" alt="">
                     </div>
-                    <!-- image -->
-                    <div class="flex-1 justify-center items-center flex">
-                        <img src="./images/slider/bike2.png" alt="">
+                    <div class="text-center">
+                        <h3 class="pt-5 pb-5 font-bold bg-gradient-to-r from-indigo-500 via-purple-500
+                        to-pink-500 bg-clip-text text-transparent text-2xl md:text-3xl">Md Ariful Islam</h3>
+                        <h1
+                            class="pb-10 font-semibold inline-block bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent text-xl">
+                            Banker</h1>
                     </div>
                 </div>
 
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide1" class="btn btn-circle">❮</a>
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-            <!-- slide 3 -->
-            <div id="slide3" class="carousel-item relative w-full lg:h-[550px] rounded-lg bg-[#fbe7e1]">
-                <!-- text content -->
-                <div class="flex flex-col lg:flex-row p-10 lg:p-20 ">
-                    <div class="space-y-7 flex-1 ">
-                        <h1 class="text-4xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
-                        <p class="text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                            Velit
-                            officia consequat
-                            duis enim velit mollit.</p>
-                        <button
-                            class="btn text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-5 px-8 rounded-xl">Purchase</button>
+
+                <div class="border border-[#424141] mx-5 bg-[#dad9d9] shadow-xl rounded-2xl">
+                    <img class="p-3 rounded-full mx-auto w-1/2" src="./images/others/aa.jpg" alt="">
+                    <p class="text-center mt-10 px-7">Slate helps you see how many more days you need to work to reach
+                        your financial goal for the
+                        month
+                        and year.</p>
+
+                    <div class="flex flex-row  space-x-2 mt-5 justify-center">
+                        <img class="max-w-10" src="./images/icons/star-solid.svg" alt="">
+                        <img class="max-w-10" src="./images/icons/star-solid.svg" alt="">
+                        <img class="max-w-10" src="./images/icons/star-solid.svg" alt="">
+                        <img class="max-w-10" src="./images/icons/star-solid.svg" alt="">
+                        <img class="max-w-10" src="./images/icons/star-regular.svg" alt="">
                     </div>
-                    <!-- image -->
-                    <div class="flex-1 justify-center items-center flex">
-                        <img src="./images/slider/bike3.png" alt="">
+                    <div class="text-center">
+                        <h3 class="pt-5 pb-5 font-bold bg-gradient-to-r from-indigo-500 via-purple-500
+                        to-pink-500 bg-clip-text text-transparent text-2xl md:text-3xl">Ariful Islam</h3>
+                        <h1
+                            class="pb-10 font-semibold inline-block bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent text-xl">
+                            Banker</h1>
                     </div>
                 </div>
 
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide2" class="btn btn-circle">❮</a>
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-            <!-- slide 4 -->
-            <div id="slide4" class="carousel-item relative w-full lg:h-[550px] rounded-lg bg-[#fbe7e1]">
-                <!-- text content -->
-                <div class="flex flex-col lg:flex-row p-10 lg:p-20 ">
-                    <div class="space-y-7 flex-1 ">
-                        <h1 class="text-4xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
-                        <p class="text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                            Velit
-                            officia consequat
-                            duis enim velit mollit.</p>
-                        <button
-                            class="btn text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-5 px-8 rounded-xl">Purchase</button>
-                    </div>
-                    <!-- image -->
-                    <div class="flex-1 justify-center items-center flex">
-                        <img src="./images/slider/bike4.png" alt="">
-                    </div>
-                </div>
 
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide3" class="btn btn-circle">❮</a>
-                    <a href="#slide1" class="btn btn-circle">❯</a>
+                <div class="border border-[#424141] mx-5 bg-[#dad9d9] shadow-xl rounded-2xl">
+                    <img class="p-3 rounded-full mx-auto w-1/2" src="./images/others/aaa.jpg" alt="">
+                    <p class="text-center mt-10 px-7">Slate helps you see how many more days you need to work to reach
+                        your financial goal for the
+                        month
+                        and year.</p>
+
+                    <div class="flex flex-row  space-x-2 mt-5 justify-center">
+                        <img class="max-w-10" src="./images/icons/star-solid.svg" alt="">
+                        <img class="max-w-10" src="./images/icons/star-solid.svg" alt="">
+                        <img class="max-w-10" src="./images/icons/star-solid.svg" alt="">
+                        <img class="max-w-10" src="./images/icons/star-solid.svg" alt="">
+                        <img class="max-w-10" src="./images/icons/star-regular.svg" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="pt-5 pb-5 font-bold bg-gradient-to-r from-indigo-500 via-purple-500
+                        to-pink-500 bg-clip-text text-transparent text-2xl md:text-3xl">Ariful Islam</h3>
+                        <h1
+                            class="pb-10 font-semibold inline-block bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent text-xl">
+                            Banker</h1>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
-    <!-- main section 2 -->
-
-    <main class="container mx-auto mt-20">
-        <div class="flex flex-col items-center space-y-5">
-            <h1 class="text-xl lg:text-4xl font-semibold">Fetured Bikes In This Year</h1>
-            <p class="text-xl text-[#E76F51]">Best bike collection</p>
-        </div>
-
-
-        <!-- image -->
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center mt-10">
-            <img src="./images/others/b1.jpg" alt="">
-            <img src="./images/others/b2.jpg" alt="">
-            <img src="./images/others/b3.jpg" alt="">
-        </div>
-
-    </main>
-
 
 </body>
 
